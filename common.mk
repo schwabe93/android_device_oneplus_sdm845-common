@@ -57,6 +57,10 @@ PRODUCT_COPY_FILES += \
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
+	
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
 
 # Common init scripts
 PRODUCT_PACKAGES += \
