@@ -224,7 +224,10 @@
     <carrier_config mcc="262" mnc="01">
         <boolean name="carrier_name_override_bool" value="false" />
     </carrier_config>
-    <carrier_config mcc="262" mnc="02" />
+    <carrier_config mcc="262" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="262" mnc="03" />
     <carrier_config mcc="262" mnc="05" />
     <carrier_config mcc="262" mnc="06" />
