@@ -83,3 +83,6 @@ framework/qcnvitems.jar
 framework/qti-telephony-common.jar|b1d392dbc9b06ac8d650b874c502da0a3fff81c7
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# FOD
+lib64/vendor.oneplus.fingerprint.extension@1.0.so
