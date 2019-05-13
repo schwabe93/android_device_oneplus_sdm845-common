@@ -165,6 +165,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2019-04-01
+    
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
