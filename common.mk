@@ -20,7 +20,7 @@ $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aex
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
-	
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
 # Camera
  PRODUCT_PACKAGES += \
      CameraPackage
-     
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan \
@@ -168,10 +168,19 @@ PRODUCT_PACKAGES += \
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2019-04-01
-    
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+				HideCutout \
+				StatusBarStock
+
+# World APN list
+PRODUCT_COPY_FILES += \
+		    vendor/aosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
