@@ -20,7 +20,7 @@ $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aex
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -154,3 +154,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+				HideCutout \
+				StatusBarStock
+
+# World APN list
+PRODUCT_COPY_FILES += \
+		    vendor/aosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
