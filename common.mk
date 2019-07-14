@@ -143,8 +143,8 @@ PRODUCT_PACKAGES += \
     tri-state-key_daemon
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
