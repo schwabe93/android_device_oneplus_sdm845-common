@@ -146,7 +146,7 @@ PRODUCT_PACKAGES += \
 # Trust HAL
 #PRODUCT_PACKAGES += \
 #    lineage.trust@1.0-service
-=======
+
 # Prebuilts
 PRODUCT_PACKAGES += \
     OnePlusCamera \
